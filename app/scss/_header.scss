@@ -1,0 +1,241 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  padding: 30px 0;
+  transition: .4s all;
+  &.black{
+    .header__burger{
+      span{
+        background-color: $text;
+        &:before{
+          background-color: $text;
+        }
+      }
+    }
+    .header__logo{
+      color: $text;
+    }
+    .header__menu{
+      ul{
+        li{
+          a{
+            color:$text;
+            &:before{
+              background-color: $text;
+            }
+          }
+        }
+      }
+    }
+    .header__search{
+      svg{
+        path{
+          fill: $text;
+        }
+      }
+    }
+  }
+  &.active{
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0px 6px 25px rgba(5, 25, 69, 0.15);
+    .header__burger{
+      span{
+        background-color: $text;
+        &:before{
+          background-color: $text;
+        }
+      }
+    }
+    .header__logo{
+      color: $text;
+    }
+    .header__menu{
+      ul{
+        li{
+          a{
+            color:$text;
+            &:before{
+              background-color: $text;
+            }
+          }
+        }
+      }
+    }
+    .header__search{
+      svg{
+        path{
+          fill: $text;
+        }
+      }
+    }
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+  &__burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 32px;
+    margin-right: 25px;
+    &:hover{
+      span{
+        transform: rotate(45deg);
+        top: 0;
+        &:before{
+          transform: rotate(-85deg);
+          top: 0;
+        }
+      }
+    }
+    span{
+      display: block;
+      background-color: #fff;
+      width: 32px;
+      height: 1px;
+      position: relative;
+      top: -5px;
+      transition: .4s all;
+      &:before{
+        content: '';
+        background-color: #fff;
+        width: 32px;
+        height: 1px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transition: .4s all;
+      }
+    }
+  }
+  &__logo{
+    display: inline-block;
+    color: #fff;
+    transition: .4s all;
+    &:hover{
+      color: #fff;
+    }
+    b{
+      font-size: 1.2em;
+      display: block;
+      text-transform: uppercase;
+      line-height: 1.3;
+      font-weight: 800;
+    }
+    span{
+      font-size: 0.8em;
+      display: block;
+      line-height: 1.2;
+      font-weight: 300;
+    }
+  }
+  &__menu{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      li{
+        margin: 0 25px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          color: #fff;
+          font-size: 0.9em;
+          position: relative;
+          transition: .4s all;
+          &.active{
+            &:before{
+              width: 100%;
+            }
+          }
+          &:hover{
+            &:before{
+              width: 100%;
+            }
+          }
+          &:before{
+            content: '';
+            width: 0%;
+            height: 1px;
+            top: 105%;
+            left: 0;
+            background-color: #fff;
+            transition: .4s all;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  &__search{
+    display: flex;
+    justify-content: flex-end;
+    svg{
+      path{
+        transition: .4s all;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px){
+  .header{
+    &__menu{
+      ul{
+        li{
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .header{
+     &__logo{
+       b{
+         font-size: 1em;
+       }
+       span{
+         font-size: 0.5em;
+       }
+     }
+  }
+}
+@media screen and (max-width: 560px){
+  .header{
+    padding: 15px 0;
+    &__burger{
+      width: 27px;
+      margin-right: 15px;
+      span{
+        width: 27px;
+        &:before{
+          width: 27px;
+        }
+      }
+    }
+    &__logo{
+      b{
+        font-size: 1.2em;
+      }
+      span{
+        font-size: 0.8em;
+      }
+    }
+    &__search{
+      svg{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

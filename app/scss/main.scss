@@ -1,0 +1,143 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: $default-font;
+	font-size: 18px;
+	line-height: 1.6;
+	color: $text;
+	font-weight: normal;
+}
+button{
+	border: none;
+	outline: transparent;
+	background-color: transparent;
+	&:active{
+		outline: transparent;
+		background-color: transparent;
+	}
+	&:focus{
+		outline: transparent;
+		background-color: transparent;
+	}
+
+}
+a{
+	text-decoration: none;
+	color: $text;
+	outline: transparent;
+}
+.wrapper{
+	min-height: 700px;
+}
+.padding{
+	padding: 60px 0;
+	padding-bottom: 0;
+}
+@import "header";
+@import "mobile-menu";
+@import "footer";
+@import "head";
+@import "about";
+@import "scrollBlock";
+@import "calendar";
+@import "bannerPage";
+@import "news";
+@import "breadcrumbs";
+@import "paginations";
+@import "pageTop";
+@import "detailPage";
+@import "404";
+@import "contacts";
+@import "search";
+@import "gallery";
+@import "modalName";
+
+
+.title{
+	margin-bottom: 35px;
+	h2,h3,h4,h5,h6{
+		font-weight: bold;
+		font-size: 2.6em;
+		line-height: 1.3;
+	}
+	p{
+		font-size: 1.5em;
+		line-height: 1.3;
+	}
+}
+.form{
+	position: relative;
+	&.search {
+		input {
+			border: none;
+			outline: transparent;
+			outline: transparent;
+			border-bottom: 1px rgba(255, 255, 255, .6) solid;
+			background-color: transparent;
+			color: #fff;
+			font-family: $default-font;
+			font-size: 0.9em;
+			width: 100%;
+			padding: 8px;
+
+			&::placeholder {
+				color: #fff;
+				font-weight: 100;
+			}
+		}
+	}
+	input{
+		margin: 0;
+		outline: transparent;
+		border: 1px solid #051945;
+		border-radius: 5px;
+		width: 100%;
+		height: 55px;
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+		font-family: $default-font;
+		font-size: 0.9em;
+	}
+}
+.btn{
+	border: none;
+	outline: transparent;
+	margin: 0;
+	padding: 0;
+	background-color: $text;
+	color: #fff;
+	font-weight: 500;
+	font-size: 0.9em;
+	border-radius: 5px;
+	&:hover{
+		background-color: #0E2A66;
+		color: #fff;
+	}
+}
+.head_padding{
+	padding-top: 140px;
+}
+
+.tour_3d{
+	width: 100%;
+	iframe{
+		width: 100%;
+		height: 700px;
+	}
+}
+
+
+@import "media"; // Always at the end

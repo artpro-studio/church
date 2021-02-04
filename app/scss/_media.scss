@@ -1,0 +1,73 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@media screen and (max-width:1200px){
+  .container{
+    width: 100%;
+    max-width: none;
+  }
+}
+
+// ≥992px
+@media screen and (max-width:996px){
+  body{
+    font-size: 16px;
+  }
+  .title{
+    h1,h2,h3,h4,h5,h6{
+      font-size: 2em;
+    }
+    p{
+      font-size: 1.3em;
+    }
+  }
+  .padding{
+    padding-bottom: 0;
+  }
+}
+
+// ≥768px
+@media screen and (max-width:768px){
+  body{
+    font-size: 16px;
+  }
+}
+
+// ≥576px
+@media screen and (max-width:600px){
+  .wrapper{
+    min-height: 200px;
+  }
+  body{
+    font-size: 12px;
+  }
+  .title{
+    margin-bottom: 20px;
+    h1,h2,h3,h4,h5,h6{
+      font-size: 2em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 1em;
+      line-height: 1.4;
+    }
+  }
+  body{
+    font-size: 12px;
+  }
+  .head_padding{
+    padding-top: 50px;
+  }
+  .padding{
+    padding: 20px 0;
+  }
+  .tour_3d{
+    iframe{
+      height: 400px;
+    }
+  }
+}

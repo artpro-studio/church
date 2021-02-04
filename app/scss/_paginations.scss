@@ -1,0 +1,67 @@
+.pagianations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+  a{
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0 12px;
+    &:hover{
+      color: $text;
+    }
+  }
+  .numbers{
+    display: flex;
+    align-items: center;
+  }
+  .number{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    &.active{
+      background-color: $text;
+      color: #fff;
+    }
+    &:hover{
+      background-color: $text;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 996px){
+  .pagianations{
+    a{
+      margin: 0 9px;
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .pagianations{
+    flex-wrap: wrap;
+    margin: 20px 0;
+    a{
+      margin: 0 5px;
+      font-size: 1em;
+    }
+    .number{
+      order: 0;
+      width: 30px;
+      height: 30px;
+    }
+    .numbers{
+      order: 0;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .pag_nav{
+      order: 1;
+    }
+  }
+}

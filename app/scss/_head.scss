@@ -1,0 +1,78 @@
+.head{
+  height: 100vh;
+  min-height: 700px;
+  background-color: $text;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  .text{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    h1{
+      color: #fff;
+      font-weight: 900;
+      font-size: 4.1em;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #fff;
+      font-weight: normal;
+      font-size: 1.1em;
+      width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media screen and(max-width: 1200px){
+  .head{
+    .text{
+      h1{
+        font-size: 3.6em;
+      }
+    }
+  }
+}
+@media screen and(max-width: 996px){
+  .head{
+    .text{
+      width: 100%;
+      h1{
+        font-size: 3.2em;
+      }
+    }
+  }
+}
+@media screen and(max-width: 650px){
+  .head{
+    min-height: 500px;
+    background-attachment: unset;
+    .container{
+      height: 100%;
+      .row{
+        height: 100%;
+        .col-12{
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .text{
+      width: 100%;
+      margin-top: 0px;
+      h1{
+        font-size: 2.4em;
+      }
+      p{
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  }
+}

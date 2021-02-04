@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Главная</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.min.css" rel="preload" as="style">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-10">
+                <div class="header__left">
+                    <button class="header__burger"><span></span></button>
+                    <a href="" class="header__logo">
+                        <b>Кафедральный собор</b>
+                        <span>Официальный сайт Ростовской-на-Дону епархии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 d-none d-md-none d-lg-block">
+                <div class="header__menu">
+                    <nav>
+                        <ul>
+                            <li><a href="/" class="active" title="Главная">Главная</a></li>
+                            <li><a href="/" title="Разделы">Разделы</a></li>
+                            <li><a href="/" title="Новости">Новости</a></li>
+                            <li><a href="/" title="Требы">Требы</a></li>
+                            <li><a href="/" title="3D тур">3D тур</a></li>
+                            <li><a href="/" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-3 col-2 justify-content-end">
+                <div class="header__search">
+                    <a href="search.html">
+                        <i>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip2)">
+                                    <path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip2">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+<div class="wrapper">
+    <section class="page_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page_top__body">
+                        <div class="page_top__text">
+                            <h1>Поиск по сайту</h1>
+                            <p>Поиск по новостям (собора, патриархии, епархии)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumbs__content">
+                        <ul>
+                            <li><a href="/" title="Главная">Главная</a></li>
+                            <li><span>Контакты</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="search.php" class="form">
+                        <div class="filed">
+                            <input type="text" placeholder="Введите ваш запрос...">
+                        </div>
+                        <button type="submit" class="btn"><span>Поиск</span><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/search-white.svg" alt="Поиск" title="Поиск"></button>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="search__result">
+                        <p>Найдено 6 резуальтатов</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search__item">
+                        <div class="images imgLoad" data-bg="img/news.png">
+                            <a href="/" title="Епископ Таганрогский Артемий совершил всенощно"></a>
+                        </div>
+                        <div class="info">
+                            <div class="item_top">
+                                <h4><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Епископ</b> Таганрогский Артемий совершил всенощно</a></h4>
+                                <p><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Lorem</b> Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является... </a></p>
+                            </div>
+                            <div class="item_bottom">
+                                <div class="date">15.10.2020</div>
+                                <div class="link">
+                                    <a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Подробнее <img
+                                            src="data:image/gif;base64,R0lGODlhAwABAIAAAP///wAAACH5BAEAAAEALAAAAAADAAEAAAICjAsAOw==" data-src="img/arrow-left.svg" alt="Побробнее" title="Побробнее"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search__item">
+                        <div class="images imgLoad" data-bg="img/news.png">
+                            <a href="/" title="Епископ Таганрогский Артемий совершил всенощно"></a>
+                        </div>
+                        <div class="info">
+                            <h4><a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Епископ Таганрогский Артемий совершил всенощно</a></h4>
+                            <p><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Lorem</b> Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является... </a></p>
+                            <div class="item_bottom">
+                                <div class="date">15.10.2020</div>
+                                <div class="link">
+                                    <a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Подробнее <img
+                                            src="data:image/gif;base64,R0lGODlhAwABAIAAAP///wAAACH5BAEAAAEALAAAAAADAAEAAAICjAsAOw==" data-src="img/arrow-left.svg" alt="Побробнее" title="Побробнее"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search__item">
+                        <div class="images imgLoad" data-bg="img/news.png">
+                            <a href="/" title="Епископ Таганрогский Артемий совершил всенощно"></a>
+                        </div>
+                        <div class="info">
+                            <div class="item_top">
+                                <h4><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Епископ</b> Таганрогский Артемий совершил всенощно</a></h4>
+                                <p><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Lorem</b> Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является... </a></p>
+                            </div>
+                            <div class="item_bottom">
+                                <div class="date">15.10.2020</div>
+                                <div class="link">
+                                    <a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Подробнее <img
+                                            src="data:image/gif;base64,R0lGODlhAwABAIAAAP///wAAACH5BAEAAAEALAAAAAADAAEAAAICjAsAOw==" data-src="img/arrow-left.svg" alt="Побробнее" title="Побробнее"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search__item">
+                        <div class="images imgLoad" data-bg="img/news.png">
+                            <a href="/" title="Епископ Таганрогский Артемий совершил всенощно"></a>
+                        </div>
+                        <div class="info">
+                            <h4><a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Епископ Таганрогский Артемий совершил всенощно</a></h4>
+                            <p><a href="/" title="Епископ Таганрогский Артемий совершил всенощно"><b>Lorem</b> Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является... </a></p>
+                            <div class="item_bottom">
+                                <div class="date">15.10.2020</div>
+                                <div class="link">
+                                    <a href="/" title="Епископ Таганрогский Артемий совершил всенощно">Подробнее <img
+                                            src="data:image/gif;base64,R0lGODlhAwABAIAAAP///wAAACH5BAEAAAEALAAAAAADAAEAAAICjAsAOw==" data-src="img/arrow-left.svg" alt="Побробнее" title="Побробнее"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pagianations">
+                        <a href="/" title="В начало" class="pag_nav">В начало</a>
+                        <a href="/" title="Назад" class="pag_nav">Назад</a>
+                        <div class="numbers">
+                            <span class="number active">1</span>
+                            <a href="/" class="number" title="2">2</a>
+                            <a href="/" class="number" title="3">3</a>
+                            <a href="/" class="number" title="4">4</a>
+                            <a href="/" class="number" title="5">5</a>
+                            <a href="/" class="number" title="6">6</a>
+                        </div>
+                        <a href="/"  title="Вперед" class="pag_nav">Вперед</a>
+                        <a href="/" title="В конец" class="pag_nav">В конец</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__content">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-4 col-12">
+                    <a href="" class="footer__logo">
+                        <b>Кафедральный собор</b>
+                        <span>Официальный сайт Ростовской-на-Дону епархии</span>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-12">
+                    <div class="footer__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="" title="О соборе">О соборе</a></li>
+                                <li><a href="" title="Святыни собора"></a></li>
+                                <li><a href="" title="Истории">Истории</a></li>
+                                <li><a href="" title="">Реставрация</a></li>
+                                <li><a href="" title="История в пицах">История в пицах</a></li>
+                                <li><a href="" title="Расписание">Расписание</a></li>
+                                <li><a href="" title="Контакты">Контакты</a></li>
+                                <li><a href="" title="Ссылка">Ссылка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-12">
+                    <div class="footer__social">
+                        <a href="/" target="_blank"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/facebook.svg" alt="facebook" title="facebook"></a>
+                        <a href="/" target="_blank"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/vk.svg" alt="vk" title="vk"></a>
+                        <a href="/" target="_blank"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/instagram.svg" alt="instagram" title="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-12">
+                    <div class="info">
+                        <a href="/" title="Политика конфиденциальности">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12 justify-content-end">
+                    <div class="info justify-content-end">
+                        <a href="/" title="Копирайт 2020">Копирайт 2020 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 justify-content-end">
+                    <div class="info justify-content-end">
+                        <a href="/" title="Копирайт 2020">Разработка сайта <span>ARTBYTE.AGENCY</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- MODAL MENU -->
+<div class="mobile_menu">
+    <div class="mobile_menu__wrapper">
+        <div class="mobile_menu__header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-6 col-10">
+                        <div class="mobile_menu__header_left">
+                            <button class="mobile_menu__close"><span></span></button>
+                            <a href="" class="mobile_menu__logo">
+                                <b>Кафедральный собор</b>
+                                <span>Официальный сайт Ростовской-на-Дону епархии</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-2 justify-content-end">
+                        <form action="/search.php" class="form search">
+                            <div class="field">
+                                <input type="text" placeholder="Поиск по сайту">
+                            </div>
+                            <button type="submit">
+                                <i>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </i>
+                            </button>
+                        </form>
+                        <a href="/" class="search_mobile">
+                            <i>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip1)">
+                                        <path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip1">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <h4>Навигация по сайту</h4>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="" title="Главная">Главная</a></li>
+                                    <li><a href="" title="Разделы">Разделы</a></li>
+                                    <li><a href="" title="Новости собора">Новости собора</a></li>
+                                    <li><a href="" title="Новости патриархии">Новости патриархии</a></li>
+                                    <li><a href="" title="ТРЕБЫ">ТРЕБЫ</a></li>
+                                    <li><a href="" title="3D тур">3D тур</a></li>
+                                    <li><a href="" title="Контакты">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6">
+                        <h4>Сайдбар</h4>
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="">Реставрация</a></li>
+                                    <li><a href="">Хор</a></li>
+                                    <li><a href="">Швейная мастерская</a></li>
+                                    <li><a href="">Просфорная</a></li>
+                                    <li><a href="">Сестричество</a></li>
+                                    <li><a href="">Воскресная школа</a></li>
+                                    <li><a href="">Молодежный отдел</a></li>
+                                    <li><a href="">Жертвователи</a></li>
+                                    <li><a href="">3D тур</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Контакты</h5>
+                        <p>Местопожение и спобо пожертвования</p>
+                        <div class="mobile_menu__contacts">
+                            <div class="map">
+                                <iframe src="" data-src="https://yandex.ru/map-widget/v1/-/CCUI7Yv~oB"></iframe>
+                            </div>
+                            <div class="info">
+                                <div class="links">
+                                    <div class="links__item">
+                                        <p>Электроная почта</p>
+                                        <a href="mailto:mail@mail.ru" title="Почта">mail@mail.ru</a>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Реквезиты:</p>
+                                    <p>ИНН: 123123123123</p>
+                                    <p>ИНН: 123123123123</p>
+                                    <p>ИНН: 123123123123</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ENDMODAL MENU -->
+<script src="js/scripts.min.js" async></script>
+
+</body>
+</html>

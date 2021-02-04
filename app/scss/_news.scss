@@ -1,0 +1,233 @@
+.news_page{
+  &__sidebar{
+    h3{
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+    .list_section{
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li{
+          display: block;
+          border-bottom: 1px #CACFD8 solid;
+          a{
+            display: inline-block;
+            font-weight: normal;
+            font-size: 1em;
+            padding: 10px;
+            background-color: #fff;
+            transition: .4s all;
+            &.active{
+              margin-left: 15px;
+              color: $text;
+              font-weight: 500;
+            }
+            &:hover{
+              margin-left: 15px;
+              color: $text;
+            }
+          }
+        }
+      }
+    }
+    .tags{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      h4{
+        width: 100%;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      a{
+        border: 1px #828CA2 solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34px;
+        min-width: 50px;
+        padding: 0 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+        font-weight: 500;
+        color: $text;
+        transition: .4s all;
+        &.active{
+          color: #fff;
+          background-color: $text;
+          border: 1px $text solid;
+        }
+        &:hover{
+          color: #fff;
+          background-color: $text;
+          border: 1px $text solid;
+        }
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    .item{
+      width: 33.3333%;
+      padding-right: 35px;
+      margin-bottom: 30px;
+      &:hover{
+        .item__bottom{
+          .links{
+            a{
+              img{
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .images{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 130px;
+        margin-bottom: 15px;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      a{
+        &:hover{
+          color: $text;
+        }
+      }
+      .text{
+        h4{
+          font-size: 1em;
+          line-height: 1.2;
+          margin-bottom: 5px;
+          a{
+            color: $text;
+            font-weight: 500;
+          }
+        }
+        p{
+          font-size: 0.8em;
+          line-height: 1.5;
+          margin-bottom: 10px;
+          a{
+            font-weight: 300;
+          }
+        }
+      }
+      &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .date{
+          p{
+            font-size: 0.7em;
+            line-height: 1;
+            font-weight: bold;
+            opacity: .4;
+          }
+        }
+        .links{
+          a{
+            font-weight: normal;
+            font-size: 0.8em;
+            padding-right: 35px;
+            position: relative;
+            img{
+              position: absolute;
+              top: 50%;
+              right: 0;
+              margin-top: -4px;
+              transition: .4s all;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 996px){
+  .news_page{
+    &__sidebar{
+      h3{
+        font-size: 1.1em;
+      }
+    }
+    &__content{
+      .item{
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .news_page{
+    &__content{
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .news_page{
+    &__sidebar{
+      .list_section{
+        ul{
+          li{
+            a{
+              &.active{
+                margin-left: 10px;
+              }
+              padding: 6px;
+            }
+          }
+        }
+      }
+      .tags{
+        margin-top: 20px;
+        a{
+          font-size: 0.9em;
+          height: 27px;
+        }
+      }
+    }
+    &__content{
+      .item{
+        width:100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+        .text{
+          h4{
+            font-size: 1.2em;
+          }
+          p{
+            font-size: 1em;
+          }
+        }
+        &__bottom{
+          .date{
+            p{
+              font-size: 0.9em;
+            }
+          }
+          .links{
+            a{
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

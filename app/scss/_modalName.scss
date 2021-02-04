@@ -1,0 +1,54 @@
+.modalName{
+  width: 430px;
+  border-radius: 5px;
+  h4{
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 135.4%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form{
+    .field{
+      position: relative;
+      margin-bottom: 20px;
+      label{
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        font-weight: 400;
+        font-size: 0.7em;
+      }
+      input{
+        padding-top: 20px;
+      }
+    }
+    .button{
+      text-align: center;
+      .btn{
+        height: 50px;
+        width: 180px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .modalName{
+    padding: 20px;
+    padding-top: 40px;
+    h4{
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .form{
+      .field{
+        label{
+          font-size: 1em;
+        }
+        input{
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
